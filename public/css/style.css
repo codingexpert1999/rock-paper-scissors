@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+.start-screen {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.start-screen h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #111;
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+
+.gameplay-choices button {
+    padding: 5px 25px;
+    background: #189116;
+    color: white;
+    outline: none;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.start-screen button:hover {
+    background: #189116e1;
+    cursor: pointer;
+}
+
+.create-room-box {
+    display: none;
+}
+
+.join-with-id,
+.create-room-box {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.join-with-id input,
+.create-room-box input {
+    width: 80%;
+    height: 35px;
+    border: 1px solid #333;
+    outline: none;
+    padding: 5px;
+    margin: 0;
+}
+
+.join-with-id button,
+.create-room-box button {
+    width: 20%;
+    margin: 0;
+    height: 35px;
+    background: #189116;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.join-with-id .cancel-action,
+.create-room-box .cancel-action {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: #ccc;
+    color: #333;
+}
+
+.cancel-action:hover {
+    background: #ddd !important;
+}
+
+.gameplay-screen {
+    display: none;
+}
+
+.wait-message {
+    width: 600px;
+    padding-top: 30px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.wait-message p {
+    text-align: center;
+}
+
+.connected-players {
+    width: 500px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.connected-players .player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.connected-players .player .dot {
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.connected-players .player .connected {
+    background: green;
+}
+
+.connected-players .player:first-child {
+    margin-right: 30px;
+}
+
+.choices {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease-in;
+}
+
+.choice {
+    font-size: 5rem;
+    margin-right: 40px;
+}
+
+.choice:last-child {
+    margin-right: 0;
+}
+
+.choice:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.score {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score>span {
+    font-weight: bold;
+    background: #123456;
+    color: white;
+    padding: 10px;
+}
+
+.score span#score {
+    font-weight: normal;
+}
+
+.score>span:first-child {
+    margin-bottom: 20px;
+}
+
+.message-after-choice-selection {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.message-after-choice-selection p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.join-room-box {
+    display: none;
+}
+
+.join-room-box .join-random {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    height: 35px;
+    background: #189116;
+    color: white;
+    outline: none;
+    border: none;
+    margin-top: 30px;
+}
+
+.error-message {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: none;
+    background: rgb(209, 61, 61);
+    color: white;
+    padding: 20px;
+}
+
+.error-message p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.my-choice {
+    color: green;
+}
+
+.enemy-choice {
+    color: red;
+}
